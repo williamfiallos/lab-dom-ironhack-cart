@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css">
+  <!-- link bootstrap css before your own -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- link jquery before bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <!-- link bootstrap js before your own -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  
+  <script type="text/javascript" src="./js/index.js"></script>  
+  <title>Ironhack Cart</title>
+</head>
+<body>
+
+  <!-- title -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 title"><h1>Ironhack Merchandising Shop</h1></div>
+    </div>
+    <!-- first product row -->
+    <div class="row">
+      <div class="col-lg-2"><p>IronBubble-head</p></div>
+      <div class="col-lg-2 product-price">25.00</div>
+      <div class="col-lg-2 item-quantity">QTY
+        <input class="col-lg-2 product-qty" type="number">
+      </div>
+      <div class="col-lg-2 product-total"><p>0.00</p></div>
+      <div class="col-lg-2 item-delete"><button class="btn btn-delete">Delete</button></div>
+    </div>
+    <!-- second product row -->
+    <div class="row">
+        <div class="col-lg-2"><p>IronShirt</p></div>
+        <div class="col-lg-2 product-price">40.00</div>
+        <div class="col-lg-2 item-quantity">QTY
+          <input class="col-lg-2 product-qty" type="number">
+        </div>
+        <div class="col-lg-2 product-total"><p>0.00</p></div>
+        <div class="col-lg-2 item-delete"><button class="btn btn-delete">Delete</button></div>
+    </div>
+    <!-- third product row -->
+    <div class="row">
+        <div class="col-lg-2"><p>IronSticker</p></div>
+        <div class="col-lg-2 product-price">5.00</div>
+        <div class="col-lg-2 item-quantity">QTY
+          <input class="col-lg-2 product-qty" type="number">
+        </div>
+        <div class="col-lg-2 product-total"><p>0.00</p></div>
+        <div class="col-lg-2 item-delete"><button class="btn btn-delete">Delete</button></div>
+    </div>
+  </div>
+  
+  <!-- calculate price button row -->
+  <div class="row calc">
+      <div class="col-sm-12 col-md-12 text-center">
+        <button id="calc-btn" class="btn btn-success">Calculate</button>
+      </div>
+    </div>
+
+  <!-- total price -->
+  <div class="total-price">
+      <h2>Total Price: <span class="final-price">$0</span></h2>
+    </div>
+   </div>
+
+
+  <!-- the form; d-none means display-none/hide -->
+  <div class="row theForm d-none">
+      <div class="col-md-3">
+        <input type="text" name="" id="new-prod-name">
+      </div>
+      <div class="col-md-3">
+          <input type="number" name="" id="new-prod-price">
+      </div>
+      <div class="col-md-1 offset-md-4">
+        <button class="btn btn-success" id="create-btn">CREATE</button>
+      </div>
+  </div>
+
+  <br><br><br>
+  <div class="row">
+    <div class="col-sm-12 col-md-12 text-center">
+      <div class="col-sm-10 col-md-12" id="actual-total"></div>
+    </div>
+  </div>
+
+
+</body>
+</html>
